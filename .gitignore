@@ -1,47 +1,42 @@
-# Excluir todos los archivos temporales y directorios
-*.temp
+
 *~
-*.bak
-*.swp
-*.tmp
-
-# Excluir directorios de configuración del entorno de desarrollo
-/.vscode/
-/.idea/
-*.sublime-workspace
-
-# Excluir archivos de configuración específicos del entorno
-.env
-.secret
-
-# Excluir directorios que suelen contener archivos binarios o de otro tipo no relacionados directamente con el código fuente
-/node_modules/
-/dist/
-/build/
-/__pycache__/
-*.pyc
-
-# Excluir archivos de salida de Jupyter Notebooks
-.ipynb_checkpoints/
-*/.ipynb_checkpoints/*
-
-# Excluir posible archivo de configuración del entorno virtual de Python
-venv/
-*.venv
-env/
-
-# Excluir directorios de datos o archivos grandes que no deberían ser parte del repositorio
-/data/
-*.csv
-*.xlsx
-
-# Excluir archivos de log
-*.log
-
-dev-problems/
-tools/
-
-# NOTA: No excluimos explícitamente archivos .md y .ipynb ya que queremos incluirlos en el repositorio
 .aider*
-
+*.bak
 book/
+/build/
+.cache/
+*.csv
+/data/
+dev-problems/
+/dist/
+.env
+env/
+# Excluir archivos de configuración específicos del entorno
+# Excluir archivos de log
+# Excluir archivos de salida de Jupyter Notebooks
+# Excluir directorios de configuración del entorno de desarrollo
+# Excluir directorios de datos o archivos grandes que no deberían ser parte del repositorio
+# Excluir directorios que suelen contener archivos binarios o de otro tipo no relacionados directamente con el código fuente
+# Excluir posible archivo de configuración del entorno virtual de Python
+# Excluir todos los archivos temporales y directorios
+/.idea/
+*/.ipynb_checkpoints/*
+.ipynb_checkpoints/
+*.log
+/node_modules/
+# NOTA: No excluimos explícitamente archivos .md y .ipynb ya que queremos incluirlos en el repositorio
+*.pyc
+/__pycache__/
+_revision/
+.secret
+_site/
+site/
+*.sublime-workspace
+*.swp
+*.temp
+*.tmp
+tools/
+*.venv
+venv/
+/.vscode/
+*.xlsx

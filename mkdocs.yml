@@ -1,0 +1,68 @@
+site_name: Apuntes TIC — Igor Parra
+site_description: Apuntes sobre Tecnologías de la Información y Comunicaciones (PLN, IA, Python, algoritmos).
+site_url: https://igorparrabastias.github.io/tic-cursos-apuntes/
+docs_dir: pages
+
+theme:
+  name: material
+  language: es
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle: { icon: material/weather-night, name: Modo oscuro }
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle: { icon: material/weather-sunny, name: Modo claro }
+  features:
+    - navigation.instant
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Inicio: index.md
+  - Fundamentos del PLN y la IA (1950–hoy): fundamento-del-pln-y-la-ia.md
+  - Python — apuntes y algoritmos: apuntes-python.md
+  - Estructuras de árboles: index-trees.md
+  - Temario — Redes y comunicaciones: fundamentos-de-redes-y-comunicaciones-digitales.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      slugify: !!python/name:pymdownx.slugs.gfm
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - callouts          # convierte > [!TIP] (estilo GitHub) en cajas Material visibles
+  - search:
+      lang: es
+
+# El índice manual del doc usa anclas estilo GitHub (para imprimir); en web MkDocs ya da
+# navegación lateral + TOC, así que ignoramos el desajuste de anclas de duplicados.
+validation:
+  links:
+    anchors: ignore
+
+# Los índices ahora enlazan a los notebooks renderizados en GitHub (sin 404).
+# web.md queda fuera: es un esqueleto de curso sin contenido.
+exclude_docs: |
+  _revision/
+  web.md

@@ -1,5 +1,8 @@
 # Fundamentos de Redes y Comunicaciones Digitales
 
+!!! note "Temario"
+    Esta página es el **programa del curso** (los contenidos se irán desarrollando).
+
 1. **Introducción a las Comunicaciones y Redes Digitales**
    - Fundamentos de las comunicaciones.
    - Historia y evolución de las redes digitales.
