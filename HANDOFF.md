@@ -2,6 +2,33 @@
 
 > Documento para retomar el trabajo desde otro equipo/sesión. Última actualización: 2026-06-21.
 
+## Cómo retomar desde otro equipo (lee esto primero)
+
+**Paso 1 — clonar el repo:**
+```bash
+git clone git@github.com:igorparrabastias/tic-cursos-apuntes.git
+cd tic-cursos-apuntes
+```
+
+**Paso 2 — pégale este mensaje al Claude del otro equipo:**
+
+> Estoy retomando el proyecto **tic-cursos-apuntes** (apuntes que se publican como sitio
+> MkDocs en GitHub Pages). **Lee primero `HANDOFF.md`** en la raíz del repo: explica el
+> estado completo, cómo se genera el documento "Fundamentos del PLN y la IA" desde
+> `_revision/` (con `node assemble.js`), cómo se integran los ~260 notebooks de Python
+> (`nb_hook.py` + botón Colab) y los pendientes. El doc está dividido en una serie de 4
+> páginas + landing. Para regenerar imágenes uso `gpt-image-1-mini` con estilo
+> Blade Runner (necesito mi propia `OPENAI_API_KEY` en el entorno). Después de leerlo,
+> dime que entendiste el estado y espera mis instrucciones.
+
+**Paso 3 — para previsualizar/construir el sitio:**
+```bash
+pip install mkdocs-material mkdocs-callouts mkdocs-jupyter
+mkdocs serve     # http://127.0.0.1:8000
+```
+
+Lo único que NO viaja en el repo (a propósito) es la `OPENAI_API_KEY`; cada equipo usa la suya.
+
 ## Qué es esto
 
 Repo de **apuntes de TIC** que se publica como sitio **MkDocs Material** en GitHub Pages:
