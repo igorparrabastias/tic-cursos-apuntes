@@ -22,71 +22,71 @@ La representación semántica de palabras ha sido motor de los avances en proces
 
 ## 📑 Índice
 
-- [🏠 Introducción](#introducción)
-- [🏠 Década de 1950: Fundamentos del Análisis Semántico](#década-de-1950-fundamentos-del-análisis-semántico)
-    - [👾 1. Contexto Histórico](#1-contexto-histórico)
-    - [👾 2. Teorías Lingüísticas Iniciales](#2-teorías-lingüísticas-iniciales)
-    - [👾 3. Primeras Representaciones Semánticas](#3-primeras-representaciones-semánticas)
-    - [👾 4. Conceptos Clave de la Semántica](#4-conceptos-clave-de-la-semántica)
-    - [👾 5. Herramientas Matemáticas](#5-herramientas-matemáticas)
-    - [👾 6. Aplicaciones Tempranas](#6-aplicaciones-tempranas)
-    - [👾 7. Limitaciones y Desafíos](#7-limitaciones-y-desafíos)
-    - [👾 Conclusión](#conclusión)
-- [🏠 Años 1960: Mapeo Multidimensional](#años-1960-mapeo-multidimensional)
-    - [👾 Joseph B. Kruskal](#joseph-b-kruskal)
-    - [👾 James C. Shepherd](#james-c-shepherd)
-    - [👾 Desarrollo del Análisis Multidimensional](#desarrollo-del-análisis-multidimensional)
-    - [👾 Análisis de Escalamiento Multidimensional (MDS)](#análisis-de-escalamiento-multidimensional-mds)
-    - [👾 Representar datos de alta dimensionalidad preservando relaciones](#representar-datos-de-alta-dimensionalidad-preservando-relaciones)
-    - [👾 Propuesta del Mapeo Multidimensional y su Relevancia](#propuesta-del-mapeo-multidimensional-y-su-relevancia)
-    - [👾 Aplicación en Lingüística](#aplicación-en-lingüística)
-    - [👾 Método del MDS](#método-del-mds)
-    - [👾 Impacto en Representaciones Vectoriales](#impacto-en-representaciones-vectoriales)
-    - [👾 Limitaciones](#limitaciones)
-    - [👾 Conclusión](#conclusión-1)
-- [🏠 Década de 1970: Semántica Latente y Análisis de Componentes Principales (PCA)](#década-de-1970-semántica-latente-y-análisis-de-componentes-principales-pca)
-    - [👾 Semántica Latente y la Importancia de los Vectores en el Análisis de Datos Semánticos](#semántica-latente-y-la-importancia-de-los-vectores-en-el-análisis-de-datos-semánticos)
-    - [👾 Análisis de Componentes Principales (PCA)](#análisis-de-componentes-principales-pca)
-    - [👾 Importancia de los Vectores](#importancia-de-los-vectores)
-    - [👾 Técnicas Estadísticas para Comprender el Significado de las Palabras](#técnicas-estadísticas-para-comprender-el-significado-de-las-palabras)
-    - [👾 Conclusión](#conclusión-2)
-- [🏠 Década de 1980: Latent Semantic Analysis (LSA)](#década-de-1980-latent-semantic-analysis-lsa)
-    - [👾 Desarrollo de LSA para representar y analizar grandes volúmenes de texto](#desarrollo-de-lsa-para-representar-y-analizar-grandes-volúmenes-de-texto)
-    - [👾 Fundamentos del LSA](#fundamentos-del-lsa)
-    - [👾 Proceso de LSA](#proceso-de-lsa)
-    - [👾 El impacto de esta técnica en la comprensión automática del lenguaje](#el-impacto-de-esta-técnica-en-la-comprensión-automática-del-lenguaje)
-    - [👾 Conclusión](#conclusión-3)
-- [🏠 Década de 1990: Redes Neuronales y Representaciones Distribuidas](#década-de-1990-redes-neuronales-y-representaciones-distribuidas)
-    - [👾 Uso Temprano de Redes Neuronales para Representaciones Distribuidas](#uso-temprano-de-redes-neuronales-para-representaciones-distribuidas)
-    - [👾 Avances y Limitaciones frente a Enfoques Posteriores](#avances-y-limitaciones-frente-a-enfoques-posteriores)
-    - [👾 Conclusión](#conclusión-4)
-- [🏠 Primeros 2000: Modelos Probabilísticos y Topic Modeling](#primeros-2000-modelos-probabilísticos-y-topic-modeling)
-    - [👾 Introducción de Modelos como Latent Dirichlet Allocation (LDA)](#introducción-de-modelos-como-latent-dirichlet-allocation-lda)
-    - [👾 Cómo los Modelos Probabilísticos Influyeron en la Semántica Vectorial](#cómo-los-modelos-probabilísticos-influyeron-en-la-semántica-vectorial)
-    - [👾 Conclusión](#conclusión-5)
-- [🏠 2013: La Revolución de Word2Vec](#2013-la-revolución-de-word2vec)
-    - [👾 Propuesta de Tomas Mikolov y su equipo de Google](#propuesta-de-tomas-mikolov-y-su-equipo-de-google)
-    - [👾 Arquitecturas clave](#arquitecturas-clave)
-    - [👾 Características principales de Word2Vec](#características-principales-de-word2vec)
-    - [👾 Ventajas del modelo](#ventajas-del-modelo)
-    - [👾 Impacto en el procesamiento del lenguaje natural](#impacto-en-el-procesamiento-del-lenguaje-natural)
-    - [👾 Limitaciones y consideraciones éticas](#limitaciones-y-consideraciones-éticas)
-    - [👾 Evolución posterior](#evolución-posterior)
-    - [👾 Conclusión](#conclusión-6)
-- [🏠 2017: La Arquitectura Transformer](#2017-la-arquitectura-transformer)
-    - [👾 Contexto y motivación](#contexto-y-motivación)
-    - [👾 El mecanismo de self-attention](#el-mecanismo-de-self-attention)
-    - [👾 Codificación posicional (positional encoding)](#codificación-posicional-positional-encoding)
-    - [👾 Arquitectura completa: encoder y decoder](#arquitectura-completa-encoder-y-decoder)
-    - [👾 Por qué desplazó a las RNN y las LSTM](#por-qué-desplazó-a-las-rnn-y-las-lstm)
-- [🏠 2018–hoy: La Era de los Grandes Modelos de Lenguaje (LLM)](#2018hoy-la-era-de-los-grandes-modelos-de-lenguaje-llm)
-    - [👾 2018: el año de la divergencia (BERT, GPT-1, ELMo)](#2018-el-año-de-la-divergencia-bert-gpt-1-elmo)
-    - [👾 2019: GPT-2 y el poder del escalado](#2019-gpt-2-y-el-poder-del-escalado)
-    - [👾 2020: GPT-3, aprendizaje en contexto y leyes de escala](#2020-gpt-3-aprendizaje-en-contexto-y-leyes-de-escala)
-    - [👾 2022: alineación, RLHF y la irrupción de ChatGPT](#2022-alineación-rlhf-y-la-irrupción-de-chatgpt)
-    - [👾 2023 en adelante: multimodalidad, modelos abiertos y agentes](#2023-en-adelante-multimodalidad-modelos-abiertos-y-agentes)
-    - [👾 El arco de la representación semántica](#el-arco-de-la-representación-semántica)
-- [🏠 Conclusión General](#conclusión-general)
+- [🏠 Introducción](#-introducción)
+- [🏠 Década de 1950: Fundamentos del Análisis Semántico](#-década-de-1950-fundamentos-del-análisis-semántico)
+    - [👾 1. Contexto Histórico](#-1-contexto-histórico)
+    - [👾 2. Teorías Lingüísticas Iniciales](#-2-teorías-lingüísticas-iniciales)
+    - [👾 3. Primeras Representaciones Semánticas](#-3-primeras-representaciones-semánticas)
+    - [👾 4. Conceptos Clave de la Semántica](#-4-conceptos-clave-de-la-semántica)
+    - [👾 5. Herramientas Matemáticas](#-5-herramientas-matemáticas)
+    - [👾 6. Aplicaciones Tempranas](#-6-aplicaciones-tempranas)
+    - [👾 7. Limitaciones y Desafíos](#-7-limitaciones-y-desafíos)
+    - [👾 Conclusión](#-conclusión)
+- [🏠 Años 1960: Mapeo Multidimensional](#-años-1960-mapeo-multidimensional)
+    - [👾 Joseph B. Kruskal](#-joseph-b-kruskal)
+    - [👾 James C. Shepherd](#-james-c-shepherd)
+    - [👾 Desarrollo del Análisis Multidimensional](#-desarrollo-del-análisis-multidimensional)
+    - [👾 Análisis de Escalamiento Multidimensional (MDS)](#-análisis-de-escalamiento-multidimensional-mds)
+    - [👾 Representar datos de alta dimensionalidad preservando relaciones](#-representar-datos-de-alta-dimensionalidad-preservando-relaciones)
+    - [👾 Propuesta del Mapeo Multidimensional y su Relevancia](#-propuesta-del-mapeo-multidimensional-y-su-relevancia)
+    - [👾 Aplicación en Lingüística](#-aplicación-en-lingüística)
+    - [👾 Método del MDS](#-método-del-mds)
+    - [👾 Impacto en Representaciones Vectoriales](#-impacto-en-representaciones-vectoriales)
+    - [👾 Limitaciones](#-limitaciones)
+    - [👾 Conclusión](#-conclusión_1)
+- [🏠 Década de 1970: Semántica Latente y Análisis de Componentes Principales (PCA)](#-década-de-1970-semántica-latente-y-análisis-de-componentes-principales-pca)
+    - [👾 Semántica Latente y la Importancia de los Vectores en el Análisis de Datos Semánticos](#-semántica-latente-y-la-importancia-de-los-vectores-en-el-análisis-de-datos-semánticos)
+    - [👾 Análisis de Componentes Principales (PCA)](#-análisis-de-componentes-principales-pca)
+    - [👾 Importancia de los Vectores](#-importancia-de-los-vectores)
+    - [👾 Técnicas Estadísticas para Comprender el Significado de las Palabras](#-técnicas-estadísticas-para-comprender-el-significado-de-las-palabras)
+    - [👾 Conclusión](#-conclusión_2)
+- [🏠 Década de 1980: Latent Semantic Analysis (LSA)](#-década-de-1980-latent-semantic-analysis-lsa)
+    - [👾 Desarrollo de LSA para representar y analizar grandes volúmenes de texto](#-desarrollo-de-lsa-para-representar-y-analizar-grandes-volúmenes-de-texto)
+    - [👾 Fundamentos del LSA](#-fundamentos-del-lsa)
+    - [👾 Proceso de LSA](#-proceso-de-lsa)
+    - [👾 El impacto de esta técnica en la comprensión automática del lenguaje](#-el-impacto-de-esta-técnica-en-la-comprensión-automática-del-lenguaje)
+    - [👾 Conclusión](#-conclusión_3)
+- [🏠 Década de 1990: Redes Neuronales y Representaciones Distribuidas](#-década-de-1990-redes-neuronales-y-representaciones-distribuidas)
+    - [👾 Uso Temprano de Redes Neuronales para Representaciones Distribuidas](#-uso-temprano-de-redes-neuronales-para-representaciones-distribuidas)
+    - [👾 Avances y Limitaciones frente a Enfoques Posteriores](#-avances-y-limitaciones-frente-a-enfoques-posteriores)
+    - [👾 Conclusión](#-conclusión_4)
+- [🏠 Primeros 2000: Modelos Probabilísticos y Topic Modeling](#-primeros-2000-modelos-probabilísticos-y-topic-modeling)
+    - [👾 Introducción de Modelos como Latent Dirichlet Allocation (LDA)](#-introducción-de-modelos-como-latent-dirichlet-allocation-lda)
+    - [👾 Cómo los Modelos Probabilísticos Influyeron en la Semántica Vectorial](#-cómo-los-modelos-probabilísticos-influyeron-en-la-semántica-vectorial)
+    - [👾 Conclusión](#-conclusión_5)
+- [🏠 2013: La Revolución de Word2Vec](#-2013-la-revolución-de-word2vec)
+    - [👾 Propuesta de Tomas Mikolov y su equipo de Google](#-propuesta-de-tomas-mikolov-y-su-equipo-de-google)
+    - [👾 Arquitecturas clave](#-arquitecturas-clave)
+    - [👾 Características principales de Word2Vec](#-características-principales-de-word2vec)
+    - [👾 Ventajas del modelo](#-ventajas-del-modelo)
+    - [👾 Impacto en el procesamiento del lenguaje natural](#-impacto-en-el-procesamiento-del-lenguaje-natural)
+    - [👾 Limitaciones y consideraciones éticas](#-limitaciones-y-consideraciones-éticas)
+    - [👾 Evolución posterior](#-evolución-posterior)
+    - [👾 Conclusión](#-conclusión_6)
+- [🏠 2017: La Arquitectura Transformer](#-2017-la-arquitectura-transformer)
+    - [👾 Contexto y motivación](#-contexto-y-motivación)
+    - [👾 El mecanismo de self-attention](#-el-mecanismo-de-self-attention)
+    - [👾 Codificación posicional (positional encoding)](#-codificación-posicional-positional-encoding)
+    - [👾 Arquitectura completa: encoder y decoder](#-arquitectura-completa-encoder-y-decoder)
+    - [👾 Por qué desplazó a las RNN y las LSTM](#-por-qué-desplazó-a-las-rnn-y-las-lstm)
+- [🏠 2018–hoy: La Era de los Grandes Modelos de Lenguaje (LLM)](#-2018hoy-la-era-de-los-grandes-modelos-de-lenguaje-llm)
+    - [👾 2018: el año de la divergencia (BERT, GPT-1, ELMo)](#-2018-el-año-de-la-divergencia-bert-gpt-1-elmo)
+    - [👾 2019: GPT-2 y el poder del escalado](#-2019-gpt-2-y-el-poder-del-escalado)
+    - [👾 2020: GPT-3, aprendizaje en contexto y leyes de escala](#-2020-gpt-3-aprendizaje-en-contexto-y-leyes-de-escala)
+    - [👾 2022: alineación, RLHF y la irrupción de ChatGPT](#-2022-alineación-rlhf-y-la-irrupción-de-chatgpt)
+    - [👾 2023 en adelante: multimodalidad, modelos abiertos y agentes](#-2023-en-adelante-multimodalidad-modelos-abiertos-y-agentes)
+    - [👾 El arco de la representación semántica](#-el-arco-de-la-representación-semántica)
+- [🏠 Conclusión General](#-conclusión-general)
 
 ---
 
@@ -94,6 +94,9 @@ La representación semántica de palabras ha sido motor de los avances en proces
 > Aviso: este documento cubre 75 años de IA y contiene chistes cada pocas páginas. Si encuentras uno bueno, fue sin querer.
 
 ## 🏠 Década de 1950: Fundamentos del Análisis Semántico
+
+<p align="center"><img src="assets/img/1950-a.png" alt="Ilustración" width="460"></p>
+
 
 ### 👾 1. Contexto Histórico
 
@@ -190,6 +193,9 @@ La Hipótesis Distribucional ha tenido un impacto duradero: inspiró modelos mat
 
 ### 👾 3. Primeras Representaciones Semánticas
 
+<p align="center"><img src="assets/img/1950-b.png" alt="Ilustración" width="460"></p>
+
+
 #### 📌 Análisis de co-ocurrencia
 
 El **análisis de co-ocurrencia** examina la frecuencia con que ciertas palabras aparecen juntas en un texto o corpus. La idea central es que las palabras que co-aparecen con regularidad en contextos similares comparten una relación semántica. Es una base para construir representaciones vectoriales.
@@ -285,6 +291,9 @@ Así, "perro" y "gato" están cerca en "animales" y "doméstico"; "león" y "sel
 **Aplicaciones**: búsqueda y recuperación de información, traducción automática y análisis de sentimientos. Los espacios vectoriales transforman el lenguaje en un formato numérico procesable, base de chatbots, asistentes virtuales y sistemas de recomendación.
 
 ### 👾 5. Herramientas Matemáticas
+
+<p align="center"><img src="assets/img/1950-c.png" alt="Ilustración" width="460"></p>
+
 
 #### 📌 Álgebra lineal
 
@@ -392,6 +401,9 @@ La RI fue uno de los primeros campos beneficiados por la vectorización de palab
 
 ### 👾 7. Limitaciones y Desafíos
 
+<p align="center"><img src="assets/img/1950-d.png" alt="Ilustración" width="460"></p>
+
+
 #### 📌 Capacidad computacional
 
 La **capacidad computacional** de las primeras décadas era muy limitada frente a los estándares actuales. Las computadoras de mediados del siglo XX tenían fuertes restricciones de velocidad, memoria y almacenamiento.
@@ -431,6 +443,9 @@ La década de 1950 estableció los cimientos conceptuales, lingüísticos y mate
 > En 1950, Turing preguntó si las máquinas podían pensar. 75 años después, siguen sin poder estacionar.
 
 ## 🏠 Años 1960: Mapeo Multidimensional
+
+<p align="center"><img src="assets/img/1960-a.png" alt="Ilustración" width="460"></p>
+
 
 Contribuciones de Joseph B. Kruskal y James C. Shepherd.
 
@@ -533,6 +548,9 @@ Shepherd también participó en la creación de herramientas y software que perm
 
 ### 👾 Desarrollo del Análisis Multidimensional
 
+<p align="center"><img src="assets/img/1960-b.png" alt="Ilustración" width="460"></p>
+
+
 ### 👾 Análisis de Escalamiento Multidimensional (MDS)
 
 El MDS es una técnica estadística para visualizar la similitud o disimilitud entre objetos o datos. Su objetivo es representar en un espacio de menor dimensión (2D o 3D) las relaciones de proximidad entre los elementos analizados.
@@ -569,6 +587,9 @@ MDS se basa en que las relaciones de proximidad pueden representarse como distan
 
 ### 👾 Representar datos de alta dimensionalidad preservando relaciones
 
+<p align="center"><img src="assets/img/1960-c.png" alt="Ilustración" width="460"></p>
+
+
 La reducción de dimensionalidad busca representar datos de alta dimensión en espacios menores preservando sus relaciones y estructuras, facilitando análisis y visualización.
 
 #### 📌 Motivación
@@ -600,6 +621,9 @@ Cada técnica tiene ventajas y desventajas; la elección depende del contexto y 
 ### 👾 Propuesta del Mapeo Multidimensional y su Relevancia
 
 ### 👾 Aplicación en Lingüística
+
+<p align="center"><img src="assets/img/1960-d.png" alt="Ilustración" width="460"></p>
+
 
 #### 📌 Visualización de relaciones semánticas
 
@@ -981,6 +1005,9 @@ El mapeo multidimensional de los años 1960, impulsado por figuras como Joseph B
 
 ## 🏠 Década de 1970: Semántica Latente y Análisis de Componentes Principales (PCA)
 
+<p align="center"><img src="assets/img/1970-a.png" alt="Ilustración" width="460"></p>
+
+
 ### 👾 Semántica Latente y la Importancia de los Vectores en el Análisis de Datos Semánticos
 
 > [!TIP] 😄 Pausa
@@ -1037,6 +1064,9 @@ Aplicaciones prácticas:
 Desafíos y consideraciones éticas: la ambigüedad del lenguaje, la variabilidad cultural en la interpretación de temas y la necesidad de contextos específicos. Además, deben considerarse las implicaciones éticas de la minería de datos, en especial la privacidad y el consentimiento sobre los datos utilizados.
 
 ### 👾 Análisis de Componentes Principales (PCA)
+
+<p align="center"><img src="assets/img/1970-b.png" alt="Ilustración" width="460"></p>
+
 
 **Objetivo**: reducir la dimensionalidad de los datos manteniendo la mayor varianza posible.
 
@@ -1099,6 +1129,9 @@ Una vez calculados, se seleccionan los componentes con los eigenvalores más gra
 
 ### 👾 Importancia de los Vectores
 
+<p align="center"><img src="assets/img/1970-c.png" alt="Ilustración" width="460"></p>
+
+
 #### 📌 Representación Matemática: palabras y documentos como vectores
 
 En PLN, representar palabras y documentos como vectores en un espacio matemático es fundamental para tareas como la clasificación, la traducción automática y la búsqueda de información. Transforma datos textuales no estructurados en un formato procesable por algoritmos de aprendizaje automático.
@@ -1158,6 +1191,9 @@ El ángulo entre vectores también mide similitud: un ángulo pequeño indica ve
 Las métricas de distancia y ángulo proporcionan un enfoque cuantitativo para evaluar la relación semántica, fundamental en la búsqueda de información, la traducción automática y la generación de texto.
 
 ### 👾 Técnicas Estadísticas para Comprender el Significado de las Palabras
+
+<p align="center"><img src="assets/img/1970-d.png" alt="Ilustración" width="460"></p>
+
 
 #### 📌 Modelado Estadístico del Lenguaje
 
@@ -1360,7 +1396,7 @@ La década de 1970 sentó las bases de la semántica latente y la representació
 
 ## 🏠 Década de 1980: Latent Semantic Analysis (LSA)
 
-<p align="center"><img src="assets/svd.svg" alt="SVD: A ≈ U·Σ·Vᵀ" width="520"></p>
+<p align="center"><img src="assets/img/1980-a.png" alt="Ilustración" width="460"></p>
 
 
 ### 👾 Desarrollo de LSA para representar y analizar grandes volúmenes de texto
@@ -1396,6 +1432,9 @@ Para abordar estas limitaciones se han desarrollado enfoques que permiten una re
 La evolución hacia métodos que incorporan una comprensión semántica más profunda, considerando el contexto, las relaciones semánticas y la intención del usuario, transforma la manera en que interactuamos con la información.
 
 ### 👾 Fundamentos del LSA
+
+<p align="center"><img src="assets/svd.svg" alt="SVD: A ≈ U·Σ·Vᵀ" width="520"></p>
+
 
 #### 📌 Descomposición en Valores Singulares (SVD)
 
@@ -1443,6 +1482,9 @@ El Espacio Semántico Latente (ESL) es un modelo matemático y computacional que
 **Aplicaciones**: en **recuperación de información**, representar consultas y documentos en el mismo espacio permite hallar documentos semánticamente relevantes aunque no compartan términos exactos. En **clasificación de texto** (correos, comentarios en redes), las relaciones semánticas mejoran la precisión de las predicciones. En **análisis de sentimientos**, ayuda a identificar no solo las palabras explícitas, sino también las relaciones y contextos que indican una opinión positiva o negativa.
 
 ### 👾 Proceso de LSA
+
+<p align="center"><img src="assets/img/1980-b.png" alt="Ilustración" width="460"></p>
+
 
 #### 📌 Construcción de la matriz término-documento
 
@@ -1525,6 +1567,9 @@ Aplicaciones: **clasificación de texto** (los vectores de características alim
 Desafíos: necesidad de grandes cantidades de datos para entrenar modelos efectivos, dificultad para capturar el contexto y la ambigüedad del lenguaje, y la representación de distintos idiomas y dialectos. La investigación futura busca entender mejor el contexto y las relaciones semánticas, y crear representaciones más eficientes para aplicaciones de PLN en tiempo real.
 
 ### 👾 El impacto de esta técnica en la comprensión automática del lenguaje
+
+<p align="center"><img src="assets/img/1980-c.png" alt="Ilustración" width="460"></p>
+
 
 #### 📌 Mejoras en recuperación de información
 
@@ -1657,12 +1702,18 @@ Los modelos estáticos se entrenan sobre un conjunto de datos específico y fija
 
 ### 👾 Conclusión
 
+<p align="center"><img src="assets/img/1980-d.png" alt="Ilustración" width="460"></p>
+
+
 El LSA, propuesto formalmente por Deerwester et al. (1990) a partir de ideas gestadas en los años 80, marcó un punto de inflexión al representar términos y documentos en un espacio semántico común mediante la SVD aplicada a la matriz término-documento, superando la rigidez de las búsquedas por palabras clave y abordando los problemas de sinónimos y polisemia. Sus aplicaciones se extienden a la recuperación de información, a la educación —con la evaluación automática de ensayos y la tutoría inteligente (Knewton, Duolingo, ALEKS)— y a avances del PLN como la traducción automática, impulsada por los transformadores de Vaswani et al. (2017) y evaluada con BLEU, METEOR y TER, y el resumen automático extractivo y abstractivo, evaluado con ROUGE y BLEU. Sus principales limitaciones son el alto costo computacional sobre grandes corpus y la estática del modelo, mitigable mediante aprendizaje incremental, transferencia de aprendizaje y ensembles. Con ello, el LSA sentó las bases conceptuales de los modelos semánticos y embeddings posteriores —Word2Vec, GloVe, BERT y GPT— que hoy dominan la comprensión automática del lenguaje.
 
 > [!TIP] 😄 Pausa
 > LSA descompone el significado en valores singulares. Yo me descompongo en cualquier reunión antes de las 9 am.
 
 ## 🏠 Década de 1990: Redes Neuronales y Representaciones Distribuidas
+
+<p align="center"><img src="assets/img/1990-a.png" alt="Ilustración" width="460"></p>
+
 
 ### 👾 Uso Temprano de Redes Neuronales para Representaciones Distribuidas
 
@@ -1820,6 +1871,9 @@ Funcionamiento: (1) la red toma la entrada actual y la salida del paso anterior;
 Ambos son hitos en las RNN y sentaron las bases de arquitecturas más avanzadas como LSTM (Long Short-Term Memory) y GRU (Gated Recurrent Unit).
 
 ### 👾 Avances y Limitaciones frente a Enfoques Posteriores
+
+<p align="center"><img src="assets/img/1990-b.png" alt="Ilustración" width="460"></p>
+
 
 #### 📌 Aplicaciones en Lenguaje
 
@@ -1992,12 +2046,21 @@ Los modelos pioneros motivaron mejoras en arquitecturas y algoritmos:
 
 ### 👾 Conclusión
 
+<p align="center"><img src="assets/img/1990-d.png" alt="Ilustración" width="460"></p>
+
+
+<p align="center"><img src="assets/img/1990-c.png" alt="Ilustración" width="460"></p>
+
+
 La década de 1990 consolidó las redes neuronales y las representaciones distribuidas como base del PLN moderno. La popularización de la retropropagación (Werbos 1974; Rumelhart, Hinton y Williams 1986), los modelos conexistas y arquitecturas pioneras como las redes de Hopfield (1982) y las redes recurrentes de Elman (1990) y Jordan sentaron los fundamentos teóricos del aprendizaje profundo. Sus aplicaciones en modelado del lenguaje y desambiguación lexical convivieron con limitaciones serias: alto coste computacional, predominio de métodos supervisados y el problema del vanishing gradient. Estas limitaciones, superadas en parte por LSTM, GRU, Word2Vec, los embeddings contextuales (ELMo, BERT, GPT) y los Transformers, junto con los avances en aprendizaje no supervisado, multimodalidad y ética, confirman a esta etapa como punto de partida imprescindible de la evolución posterior del procesamiento del lenguaje natural.
 
 > [!TIP] 😄 Pausa
 > Las redes de los 90 sufrían el *vanishing gradient*: la motivación se desvanece capa tras capa. Relatable.
 
 ## 🏠 Primeros 2000: Modelos Probabilísticos y Topic Modeling
+
+<p align="center"><img src="assets/img/2000-a.png" alt="Ilustración" width="460"></p>
+
 
 ### 👾 Introducción de Modelos como Latent Dirichlet Allocation (LDA)
 
@@ -2182,6 +2245,9 @@ Desventajas: **convergencia lenta** (muchas iteraciones) y **dependencia de la i
 
 ### 👾 Cómo los Modelos Probabilísticos Influyeron en la Semántica Vectorial
 
+<p align="center"><img src="assets/img/2000-b.png" alt="Ilustración" width="460"></p>
+
+
 #### 📌 1. Representación Probabilística del Lenguaje
 
 ##### Captura de Incertidumbre: palabras y temas con distribuciones de probabilidad asociadas
@@ -2361,6 +2427,12 @@ Aplicaciones: **análisis de sentimientos** (entender clasificaciones para ajust
 
 ### 👾 Conclusión
 
+<p align="center"><img src="assets/img/2000-d.png" alt="Ilustración" width="460"></p>
+
+
+<p align="center"><img src="assets/img/2000-c.png" alt="Ilustración" width="460"></p>
+
+
 Los modelos probabilísticos de los primeros 2000 sentaron las bases del topic modeling moderno. Desde los modelos genéticos de Pritchard et al. (2000) hasta la formulación de LDA por Blei, Ng y Jordan (2003), la inferencia bayesiana y la distribución de Dirichlet ofrecieron un marco generativo para representar documentos como mezclas de temas y temas como distribuciones de palabras. Estos enfoques aportaron captura de incertidumbre, flexibilidad ante la polisemia y los sinónimos, escalabilidad y actualización incremental frente a los modelos determinísticos, e impulsaron aplicaciones como el análisis de sentimiento y la recomendación de contenidos. Sus limitaciones —la necesidad de predefinir el número de temas y la dificultad de interpretación— siguen siendo retos abiertos, y la intersección interdisciplinaria que originó LDA continúa guiando el desarrollo de modelos más sofisticados de PLN.
 
 > [!TIP] 😄 Pausa
@@ -2368,7 +2440,7 @@ Los modelos probabilísticos de los primeros 2000 sentaron las bases del topic m
 
 ## 🏠 2013: La Revolución de Word2Vec
 
-<p align="center"><img src="assets/word2vec.svg" alt="Word2Vec: rey − hombre + mujer ≈ reina" width="420"></p>
+<p align="center"><img src="assets/img/2013-a.png" alt="Ilustración" width="460"></p>
 
 
 ### 👾 Propuesta de Tomas Mikolov y su equipo de Google
@@ -2415,6 +2487,9 @@ La evaluación de los modelos simplificados se hace comparándolos con sus versi
 
 ### 👾 Arquitecturas clave
 
+<p align="center"><img src="assets/word2vec.svg" alt="rey − hombre + mujer ≈ reina" width="420"></p>
+
+
 Word2Vec se entrena con dos arquitecturas principales propuestas por Mikolov et al. (2013) para producir representaciones vectoriales de palabras (*word embeddings*): CBOW y Skip-Gram. Ambas son fundamentales en el PLN y se han usado ampliamente por su simplicidad y eficiencia.
 
 #### 📌 Continuous Bag of Words (CBOW): predice una palabra a partir de su contexto
@@ -2459,6 +2534,9 @@ Skip-Gram, introducido por Mikolov et al. en 2013 como parte de Word2Vec, parte 
 
 ### 👾 Características principales de Word2Vec
 
+<p align="center"><img src="assets/img/2013-b.png" alt="Ilustración" width="460"></p>
+
+
 Word2Vec simplificó y popularizó las representaciones vectoriales de palabras. Dos rasgos lo definen: representa cada palabra como un vector en un espacio de dimensiones reducidas, y permite que esos vectores admitan operaciones aritméticas semánticamente significativas.
 
 #### 📌 Vectores de palabras: cada palabra como vector en un espacio reducido
@@ -2493,6 +2571,9 @@ Esta capacidad de realizar operaciones aritméticas con sentido semántico tiene
 
 ### 👾 Ventajas del modelo
 
+<p align="center"><img src="assets/img/2013-c.png" alt="Ilustración" width="460"></p>
+
+
 Dos ventajas explican gran parte del éxito de Word2Vec: su eficiencia computacional, que permite entrenar con rapidez incluso sobre grandes corpus, y su escalabilidad, que lo hace aplicable a vocabularios muy extensos.
 
 #### 📌 Eficiencia computacional: entrenamiento rápido incluso con grandes corpus
@@ -2524,6 +2605,9 @@ Estrategias para mejorar la escalabilidad:
 La escalabilidad se evalúa midiendo el tiempo de entrenamiento en distintos tamaños de vocabulario, el rendimiento en tareas concretas a medida que crece el vocabulario y el uso de recursos computacionales (CPU, GPU y memoria) durante el entrenamiento y la inferencia. Aplicando estas estrategias y evaluando continuamente el rendimiento, es posible desarrollar sistemas de PLN eficientes que mantengan una alta calidad en la representación semántica.
 
 ### 👾 Impacto en el procesamiento del lenguaje natural
+
+<p align="center"><img src="assets/img/2013-d.png" alt="Ilustración" width="460"></p>
+
 
 El impacto de Word2Vec en el PLN se aprecia en dos planos: sirvió de base para modelos más avanzados (GloVe, FastText y los transformadores) y propició mejoras concretas en numerosas tareas del lenguaje.
 
@@ -2639,19 +2723,11 @@ La introducción de los Transformers marcó un cambio paradigmático en el PLN: 
 La aparición de Word2Vec en 2013, de la mano de Tomas Mikolov y Google, revolucionó el procesamiento del lenguaje natural al representar las palabras como vectores en un espacio reducido, capturando relaciones semánticas y sintácticas y habilitando operaciones aritméticas con significado. Sus arquitecturas CBOW y Skip-Gram, eficientes y escalables, sentaron las bases de técnicas posteriores como GloVe, FastText y los modelos basados en transformadores, e impulsaron mejoras en traducción automática, análisis de sentimiento, respuesta a preguntas y otras tareas. Pese a sus limitaciones (vectores estáticos que no resuelven la polisemia y riesgo de heredar sesgos de los datos), abrió el camino hacia los modelos contextuales (ELMo, BERT) y los Transformers, que continúan expandiendo la capacidad de las máquinas para comprender y generar lenguaje humano.
 
 > [!TIP] 😄 Pausa
-> La analogía famosa de Word2Vec, en el espacio vectorial:
-> 
-> ```
->   rey  ──(− hombre)──▶  ·realeza·  ──(+ mujer)──▶  reina
->    │                                                 │
->    └──────────── misma dirección semántica ──────────┘
-> ```
-> 
 > Restas "hombre" a "rey" y sumas "mujer" → "reina". Restas el café a un lunes → nada bueno.
 
 ## 🏠 2017: La Arquitectura Transformer
 
-<p align="center"><img src="assets/attention.svg" alt="Mecanismo de atención (Q/K/V)" width="580"></p>
+<p align="center"><img src="assets/img/2017-a.png" alt="Ilustración" width="460"></p>
 
 
 En 2017, un equipo de ocho investigadores de Google (Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser y Polosukhin) publicó en la conferencia NeurIPS el artículo **"Attention is All You Need"**. El título era casi un manifiesto: proponía que el mecanismo de **atención**, hasta entonces un componente auxiliar de las redes recurrentes, podía por sí solo sostener toda una arquitectura de procesamiento de secuencias. El resultado fue el **Transformer**, la arquitectura que hoy sustenta a prácticamente todos los grandes modelos de lenguaje.
@@ -2671,6 +2747,9 @@ Como cada palabra depende del estado calculado para la anterior, una RNN **no pu
 La información de las primeras palabras debe "viajar" a través de muchos pasos hasta llegar a las últimas. En ese trayecto, la señal se diluye (el conocido problema del *vanishing gradient*). Aunque las LSTM mitigaban este efecto con sus mecanismos de compuertas, capturar relaciones entre palabras muy distantes en un texto seguía siendo frágil. Para el Transformer, en cambio, la distancia entre dos palabras es irrelevante: cualquier par de tokens se conecta en una sola operación.
 
 ### 👾 El mecanismo de self-attention
+
+<p align="center"><img src="assets/attention.svg" alt="Atención Q/K/V" width="580"></p>
+
 
 La idea central es la **auto-atención** (*self-attention*): permitir que cada palabra de la secuencia "mire" directamente a todas las demás y pondere cuánta importancia darle a cada una para construir su propia representación. Así, en la frase "el animal no cruzó la calle porque *estaba* cansado", el modelo puede aprender que "estaba" se refiere a "animal" y no a "calle", conectando ambos términos sin importar cuántas palabras los separen.
 
@@ -2709,6 +2788,9 @@ En lugar de calcular una sola atención, el Transformer ejecuta varias en parale
 
 ### 👾 Codificación posicional (positional encoding)
 
+<p align="center"><img src="assets/img/2017-b.png" alt="Ilustración" width="460"></p>
+
+
 El precio de abandonar el procesamiento secuencial es que el Transformer, por sí mismo, **no tiene noción del orden** de las palabras: para él, una frase es un conjunto sin orden. Como el significado del lenguaje depende crucialmente del orden ("el perro muerde al hombre" no es lo mismo que "el hombre muerde al perro"), hace falta reinyectar esa información.
 
 #### 📌 Funciones sinusoidales
@@ -2724,12 +2806,18 @@ Estas funciones producen un patrón único para cada posición y permiten al mod
 
 ### 👾 Arquitectura completa: encoder y decoder
 
+<p align="center"><img src="assets/img/2017-c.png" alt="Ilustración" width="460"></p>
+
+
 El Transformer original es un modelo de traducción y combina dos pilas:
 
 - El **encoder** (6 capas idénticas en el modelo base) lee la frase de entrada completa y construye una representación contextual de cada palabra. Cada capa contiene una sub-capa de *self-attention* y una red *feed-forward*, ambas envueltas en conexiones residuales y normalización de capa.
 - El **decoder** (otras 6 capas) genera la traducción palabra por palabra. Añade una sub-capa de atención *enmascarada* (para no "ver el futuro" al generar) y una sub-capa de **atención cruzada** que consulta la salida del encoder.
 
 ### 👾 Por qué desplazó a las RNN y las LSTM
+
+<p align="center"><img src="assets/img/2017-d.png" alt="Ilustración" width="460"></p>
+
 
 El Transformer ganó por una combinación de factores decisivos:
 
@@ -2744,6 +2832,9 @@ En tareas de traducción (WMT inglés-alemán e inglés-francés), el Transforme
 Si 2017 aportó la arquitectura, los años siguientes aportaron la **escala**. La historia de los LLM es, en buena medida, la historia de aplicar el Transformer a corpus cada vez mayores, con más parámetros y más cómputo, y descubrir que de esa receta emergían capacidades que nadie había programado explícitamente. En este capítulo cerramos el arco que recorre el documento: de las representaciones semánticas estáticas a modelos generativos capaces de conversar.
 
 ### 👾 2018: el año de la divergencia (BERT, GPT-1, ELMo)
+
+<p align="center"><img src="assets/img/2018-a.png" alt="Ilustración" width="460"></p>
+
 
 Apenas un año después del Transformer, dos grandes laboratorios tomaron caminos complementarios a partir de la misma arquitectura.
 
@@ -2768,9 +2859,15 @@ La divergencia de 2018 quedó así fijada: **encoders para comprender, decoders 
 
 ### 👾 2019: GPT-2 y el poder del escalado
 
+<p align="center"><img src="assets/img/2018-b.png" alt="Ilustración" width="460"></p>
+
+
 OpenAI publicó **GPT-2**, que llevó la receta de GPT-1 a **1.500 millones de parámetros** (1.5B) en su versión mayor, entrenado sobre WebText (texto de enlaces de Reddit). El salto de calidad fue notable: GPT-2 generaba párrafos coherentes y temáticamente consistentes a partir de una simple indicación. Fue tan convincente que OpenAI optó inicialmente por una **publicación escalonada**, reteniendo el modelo completo por temor a usos maliciosos (desinformación, *spam*), antes de liberarlo meses después. GPT-2 consolidó una intuición que dominaría la década: **más parámetros y más datos producen mejores modelos**, de forma sorprendentemente predecible.
 
 ### 👾 2020: GPT-3, aprendizaje en contexto y leyes de escala
+
+<p align="center"><img src="assets/img/2018-c.png" alt="Ilustración" width="460"></p>
+
 
 #### 📌 GPT-3 y el in-context learning
 
@@ -2787,6 +2884,9 @@ El modelo "entendía" la tarea sobre la marcha. Esto desplazó el paradigma del 
 Ese mismo año, **Kaplan et al.** (OpenAI) formalizaron las **leyes de escala** (*Scaling Laws for Neural Language Models*): observaron que la pérdida (el error) del modelo disminuye de forma **predecible**, siguiendo leyes de potencia, a medida que crecen los parámetros, el tamaño del conjunto de datos y el cómputo. Por primera vez, mejorar un modelo dejó de ser puro ensayo y error y pasó a ser, en parte, un problema de ingeniería predecible. En 2022, el trabajo **Chinchilla** de DeepMind (Hoffmann et al.) refinó estas leyes, mostrando que muchos modelos estaban **infraentrenados en datos**: para un presupuesto de cómputo dado, conviene equilibrar parámetros y volumen de datos, en lugar de solo agrandar el modelo.
 
 ### 👾 2022: alineación, RLHF y la irrupción de ChatGPT
+
+<p align="center"><img src="assets/img/2018-d.png" alt="Ilustración" width="460"></p>
+
 
 Un modelo grande es potente, pero no necesariamente **útil ni seguro**: puede ignorar la intención del usuario, divagar o generar contenido problemático. El reto pasó de la *capacidad* a la **alineación**.
 

@@ -2,6 +2,9 @@ site_name: Apuntes TIC — Igor Parra
 site_description: Apuntes sobre Tecnologías de la Información y Comunicaciones (PLN, IA, Python, algoritmos).
 site_url: https://igorparrabastias.github.io/tic-cursos-apuntes/
 docs_dir: pages
+# URLs planas (.html) para que las rutas relativas de <img> en HTML resuelvan igual
+# en GitHub, local y Pages (assets/ junto a la página, no en un subdirectorio).
+use_directory_urls: false
 
 theme:
   name: material
