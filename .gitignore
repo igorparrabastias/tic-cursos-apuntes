@@ -40,3 +40,6 @@ tools/
 venv/
 /.vscode/
 *.xlsx
+
+# notebooks copiados por nb_hook.py durante el build (la fuente real es notebook/)
+pages/notebook/

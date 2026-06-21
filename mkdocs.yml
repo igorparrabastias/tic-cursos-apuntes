@@ -31,13 +31,17 @@ theme:
 
 nav:
   - Inicio: index.md
-  - Fundamentos del PLN y la IA (1950–hoy): fundamento-del-pln-y-la-ia.md
+  - Fundamentos del PLN y la IA (1950–hoy):
+    - Introducción y serie: fundamento-del-pln-y-la-ia.md
+    - 1 · Orígenes (1950–1979): fundamentos-1-origenes.md
+    - 2 · Estadística y redes (1980–2000s): fundamentos-2-estadistica-redes.md
+    - 3 · La era de los LLM (2013–2026): fundamentos-3-era-llm.md
+    - 4 · Investigación reciente y futuro: fundamentos-4-investigacion-futuro.md
   - Python — apuntes y algoritmos: apuntes-python.md
   - Estructuras de árboles: index-trees.md
   - Temario — Redes y comunicaciones: fundamentos-de-redes-y-comunicaciones-digitales.md
-  - Notebooks (demo):
-    - Opciones para ejecutarlos: demo-notebooks.md
-    - Render inline (mkdocs-jupyter): demo/slicing.ipynb
+  - Notebooks — opciones para ejecutarlos: demo-notebooks.md
+  # La sección "Notebooks (ejecutables)" con los 263 .ipynb la añade nb_hook.py.
 
 markdown_extensions:
   - admonition
@@ -55,6 +59,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+hooks:
+  - nb_hook.py        # integra los 263 notebooks + botón "Abrir en Colab" (sin tocarlos)
 
 plugins:
   - callouts          # convierte > [!TIP] (estilo GitHub) en cajas Material visibles
