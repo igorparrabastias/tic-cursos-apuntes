@@ -27,7 +27,9 @@ env/
 # NOTA: No excluimos explícitamente archivos .md y .ipynb ya que queremos incluirlos en el repositorio
 *.pyc
 /__pycache__/
-_revision/
+# _revision/ ahora SÍ se versiona: tubería de build del doc PLN/IA
+# (out/*.md fuente, assemble.js, gen-headers.js). Ver HANDOFF.md.
+# Sin secretos: gen-headers.js lee OPENAI_API_KEY de process.env.
 .secret
 _site/
 site/
